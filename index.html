@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" type='text/css' href="css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" type='text/css' href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+        <link rel="stylesheet" type='text/css' href="css/style.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        
+        <script src="js/words.js"></script>
+    </head>
+    <body>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=savin.amsterdam/hangman/" target="_blank" class="facebook">
+          Share on Facebook
+        </a>
+        <div class="container">
+            <div class="content">
+                <div class="title"><img src="images/header.jpg" class="headerImage" /></div>
+                <div class="row">
+                    <div class="categories">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-8" id="word">
+                        
+                    </div>
+                    <div class="col-xs-6 col-md-4" id="progress">
+                        Hanger<br />
+                        <img src="images/step0.png" class="imageProgress" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12" id="inputContainer">
+                        <div class="usedList">
+                            <span>You already tried:</span><br />
+                            <span class="letterTried"></span>
+                        </div>
+                        Please add a letter or a word and press enter or send:<br /><br />
+                        <input type="text" class="letterInput" />
+                        <button class="submitInput">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Teodor Savin &#169; 2016. 
+        </footer>
+
+        <div id="dialog-message" title="Game Finished">
+            <p>
+                Congratulations!!! You won!!!
+            </p>
+            <p>
+                <button class="resetGame">Play again</button>
+            </p>
+        </div>
+
+        <div id="dialog-message-over" title="Game Over">
+            <p>
+                Too bad! You lost!
+            </p>
+            <p>
+                <button class="resetGame">Play again</button>
+            </p>
+        </div>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                hangmanObject.initialize();
+                hangmanObject.chooseWord();
+                hangmanObject.getInput();
+                hangmanObject.tryAgain();
+            });
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-82770245-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

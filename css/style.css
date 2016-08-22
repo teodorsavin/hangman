@@ -1,0 +1,192 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: table;
+	font-weight: 100;
+	font-family: Verdana;
+}
+
+.container {
+	text-align: center;
+
+}
+
+.content {
+	text-align: center;
+	display: block;
+}
+
+.title {
+	font-size: 96px;
+}
+
+.smallerHeader {
+	width: 200px;
+}
+
+.categories {
+	width: 900px;
+	margin: 0px auto;
+	padding: 20px 0px;
+}
+
+.categoryButton {
+	padding: 15px 25px;
+	margin: 20px;
+	font-weight: bold;
+	font-size: 18px;
+	/*color: #C63112;
+	background-color: white;
+	border: 1px solid #C63112;*/
+	color: black;
+	border: 1px solid black;
+	/*background-color: #C63112;*/
+	background-color: white;
+	font-variant: small-caps;
+	width: 200px;
+}
+
+.categoryButton:hover {
+	color: white;
+	background-color: black;
+}
+
+#word {
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+
+.wordLetterHide {
+	font-size: 30px;
+	margin: 10px;
+	font-weight: bold;
+	border-bottom: 5px solid black;
+	color: white;
+	width: 35px;
+	display: inline-block;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;           /* Non-prefixed version, currently */
+			   
+}
+
+.wordLetter {
+	color: black !important;
+}
+
+#progress {
+	display: none;
+	border-left: 1px solid black;
+}
+
+.imageProgress {
+	border-top: 5px solid black;
+}
+
+.letterInput {
+	font-size: 16px;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	border: 1px solid grey;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	width: 350px;
+	font-weight: bold;
+}
+
+.submitInput {
+	font-size: 16px;
+	color: black;
+	padding: 10px 20px;
+	text-align: center;
+	border: 1px solid grey;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 150px;
+	font-weight: bold;
+}
+
+.errorInput {
+	border-color: red !important;
+}
+
+#inputContainer {
+	padding: 20px;
+	margin-bottom: 100px;
+	display: none;
+}
+
+.usedList span {
+	font-size: 14px;
+}
+
+.letterTried {
+	padding: 20px;
+	font-size: 40px !important;
+}
+
+#dialog-message, #dialog-message-over {
+	text-align: center;
+}
+
+#dialog-message p {
+	font-weight: bold;
+}
+
+.resetGame {
+	padding: 10px 15px;
+	background-color: white;
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+.clear {
+	clear: both;
+}
+
+footer {
+	width: 90%;
+	height: 100px;
+	margin: 50px auto;
+	border-top: 1px solid black;
+	text-align: center;
+	font-size: 10px;
+	padding-top: 10px;
+}
+
+.facebook {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: -80px;
+	color: white;
+	display: block;
+	padding: 10px 25px;
+	background-color: #3b5998;
+	font-weight: bold;
+	transform:rotate(90deg);
+}
+
+.facebook:hover {
+	color: white;
+	text-decoration: none;
+	color: #3b5998;
+	background-color: white;
+	border: 2px solid #3b5998;
+}
+
+.facebook:focus {
+	color: white;
+	text-decoration: none;
+	color: #3b5998;
+	background-color: white;
+	border: 2px solid #3b5998;
+}
